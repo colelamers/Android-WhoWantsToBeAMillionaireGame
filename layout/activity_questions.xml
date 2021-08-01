@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityQuestionPane">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glVLeft20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glVRight20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glHTop25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glVMiddle50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glHMiddle50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.61" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glHBottom75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glHTop8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.08" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glHBottom8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.92" />
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="300dp"
+        android:layout_height="43dp"
+        android:gravity="center"
+        android:text="asdf"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnTop"
+        app:layout_constraintEnd_toStartOf="@+id/glVMiddle50"
+        app:layout_constraintStart_toStartOf="@+id/glVMiddle50"
+        app:layout_constraintTop_toBottomOf="@+id/image"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="347dp"
+        android:layout_height="217dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/glHMiddle50"
+        app:layout_constraintEnd_toStartOf="@+id/glVMiddle50"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/glVMiddle50"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background" />
+
+    <Button
+        android:id="@+id/btnTop"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="52dp"
+        android:text="Top"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/glVMiddle50"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="@+id/glVMiddle50"
+        app:layout_constraintTop_toBottomOf="@+id/image" />
+
+    <Button
+        android:id="@+id/btnTopMiddle"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:text="Top Middle"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/glVMiddle50"
+        app:layout_constraintStart_toStartOf="@+id/glVMiddle50"
+        app:layout_constraintTop_toBottomOf="@+id/btnTop" />
+
+    <Button
+        android:id="@+id/btnBottomMiddle"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:text="Bottom Middle"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/glVMiddle50"
+        app:layout_constraintStart_toStartOf="@+id/glVMiddle50"
+        app:layout_constraintTop_toBottomOf="@+id/btnTopMiddle" />
+
+    <Button
+        android:id="@+id/btnBottom"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:text="Bottom"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/glVMiddle50"
+        app:layout_constraintStart_toStartOf="@+id/glVMiddle50"
+        app:layout_constraintTop_toBottomOf="@+id/btnBottomMiddle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

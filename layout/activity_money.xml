@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityMoneyScreen">
+
+    <Button
+        android:id="@+id/btnContinue"
+        android:layout_width="148dp"
+        android:layout_height="71dp"
+        android:text="Continue"
+        android:textColor="#0055FF"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/glVMiddle50"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="@+id/glVMiddle50"
+        app:layout_constraintTop_toTopOf="@+id/glHBottom75"
+        app:layout_constraintVertical_bias="0.741" />
+
+    <ImageView
+        android:id="@+id/roundImage"
+        android:layout_width="268dp"
+        android:layout_height="326dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnContinue"
+        app:layout_constraintEnd_toStartOf="@+id/glVMiddle50"
+        app:layout_constraintStart_toStartOf="@+id/glVMiddle50"
+        app:layout_constraintTop_toTopOf="@+id/glHTop25"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/a01" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glVLeft20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glVRight20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glHTop25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glVMiddle50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glHMiddle50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glHBottom75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glHTop8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.08" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glHBottom8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.92" />
+
+    <TextView
+        android:id="@+id/tvTopMiddle"
+        android:layout_width="162dp"
+        android:layout_height="39dp"
+        android:gravity="center"
+        android:text="Current Round"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/roundImage"
+        app:layout_constraintEnd_toStartOf="@+id/glVRight20"
+        app:layout_constraintStart_toStartOf="@+id/glVLeft20"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.826" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
