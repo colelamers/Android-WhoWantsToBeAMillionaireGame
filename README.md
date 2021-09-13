@@ -1,2 +1,1 @@
-Youtube link of me somewhat going over the project in action.
-https://youtu.be/wvY2sgDH9Vc
+This is just a simple Android application that uses basic OOP principles.
